@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="">
+    <title>Web Title</title>
+
+    <!-- cloud css start -->
+    <link rel="stylesheet" type="text/css" href="http://css.static.sldclc.com/jquery-ui-1.12.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://css.static.sldclc.com/slick-1.6.0.css" />
+    <!-- cloud css end-->
+
+    <!-- local css start -->
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1050px)" href="styles/main_desktop.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 1049px)" href="styles/main_mobile.min.css" />
+    <!-- local css end -->
+</head>
+<body>
+    <div id="navbar">
+        <div class="container flex">
+            <div class="navbar-module-container" id="logoContainerNb">
+                <a href="">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <div class="gap"></div>
+            <div class="right">
+                <div class="navbar-module-container thin-bordered new" id="msgContainerNb">
+
+                    <span class="navbar-msg-qty">2</span> New Messages
+                    <span class="popup"></span>
+
+                </div>
+                <div class="navbar-module-container thin-bordered" id="userContainerNb">
+                    <div class="no-img">AA</div>
+                    <span class="navbar-username">Avani Admin</span>
+                    <span class="drop-arrow">
+
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navbarExtended">
+        <div class="container flex">
+            <div class="wave-hover"></div>
+            <div class="extended-module active">
+                <img src="img/icons/dashboard-ico.png" alt="">
+                <span class="module-caption">Dashboard</span>
+            </div>
+            <div class="extended-module">
+                <img src="img/icons/products-ico.png" alt="">
+                <span class="module-caption">products</span>
+            </div>
+            <div class="extended-module new">
+                <img src="img/icons/cart-ico.png" alt="">
+                <span class="module-caption">Orders</span>
+                <div class="order-popup">1</div>
+            </div>
+            <div class="extended-module">
+                <img src="img/icons/customer-ico.png" alt="">
+                <span class="module-caption">Customer</span>
+            </div>
+            <div class="extended-module">
+                <img src="img/icons/administration-ico.png" alt="">
+                <span class="module-caption">Administration</span>
+            </div>
+            <div class="extended-module">
+                <img src="img/icons/content-ico.png" alt="">
+                <span class="module-caption">Content</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="menuNavigation">
+        <div class="container flex">
+            <div class="page-header">
+                Welcome to your Dashboard
+            </div>
+            <div class="gap"></div>
+            <div class="menu-sub right flex">
+                <ul class="flex">
+                    <li>All the time</li>
+                    <li>Last Week</li>
+                    <li>Last Month</li>
+                    <li>This Month</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="parentContainer">
+        <section class="section-container" id="dashboardSummary">
+            <div class="container flex">
+
+                <div class="panel-module" id="panelSales">
+                    <div class="panel-title">
+                        Total Sales
+                    </div>
+                    <div class="panel-section small">
+                        <div class="value green">25.000.0000</div>
+                        <div class="panel-caption">this month</div>
+                    </div>
+                    <div class="panel-section xsmall">
+                        <div class="value">12.000.0000</div>
+                        <div class="panel-caption">last month</div>
+                    </div>
+                </div>
+
+                <div class="panel-module" id="panelProducts">
+                    <div class="panel-title">
+                        PRODUCTS
+                    </div>
+                    <div class="panel-section large">
+                        <div class="value green">80</div>
+                        <div class="panel-caption">total products</div>
+                    </div>
+                    <div class="panel-section med">
+                        <div class="panel-caption blue">
+                            <a href="#">
+                                + add product
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="panel-module" id="panelPurchase">
+                    <div class="panel-title">
+                        PURCHASE
+                    </div>
+                    <div class="panel-section med">
+                        <div class="value green">30</div>
+                        <div class="panel-caption">this month</div>
+                    </div>
+                    <div class="panel-section small">
+                        <div class="value">10</div>
+                        <div class="panel-caption">last month</div>
+                    </div>
+                </div>
+
+                <div class="panel-module" id="panelPurchase">
+                    <div class="panel-title">
+                        Customer
+                    </div>
+                    <div class="panel-section med">
+                        <div class="value green">15</div>
+                        <div class="panel-caption">this month</div>
+                    </div>
+                    <div class="panel-section small">
+                        <div class="value">10</div>
+                        <div class="panel-caption">last month</div>
+                    </div>
+                </div>
+
+                <div class="panel-module" id="">
+                    <div class="panel-title">
+                        Visitors
+                    </div>
+                    <div class="panel-section med">
+                        <div class="value green">2.5k</div>
+                        <div class="panel-caption">this month</div>
+                    </div>
+                    <div class="panel-section small">
+                        <div class="value">2k</div>
+                        <div class="panel-caption">last month</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+</body>
+    <!-- cloud js start -->
+    <script type="text/javascript" src="http://js.static.sldclc.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="script/jquery.1.12.0.min.js"></script>
+    <script type="text/javascript" src="http://js.static.sldclc.com/angular.1.6.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="http://js.static.sldclc.com/slick-1.6.0.min.js"></script>
+    <!-- cloud js end   -->
+
+    <!-- local js start -->
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script type="text/javascript" src="script/angular.js"></script>
+    <!-- local js end   -->
+</html>
