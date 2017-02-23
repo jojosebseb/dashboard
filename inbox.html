@@ -13,7 +13,8 @@
     <!-- cloud css end-->
 
     <!-- local css start -->
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 1050px)" href="styles/main_desktop.min.css" />
+    <link rel="stylesheet" type="text/css" href="styles/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 50px)" href="styles/main_desktop.min.css" />
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 1049px)" href="styles/main_mobile.min.css" />
     <!-- local css end -->
 </head>
@@ -117,13 +118,382 @@
 
                 <div class="w20">
                     <div id="msgFolders">
-                        <div class="msg-folder active">Inbox </div>
+                        <div class="msg-folder active" id="inboxHandle">Inbox </div>
                         <div class="msg-folder">Sent Item</div>
                         <div class="msg-folder">Trash</div>
                     </div>
                 </div>
                 <div class="w80">
-                    asd
+                    <div id="msgList">
+                        <div id="msgHeader" class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox checkbox-handle"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header">Type</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Sender</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Last Message</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">Updated</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex unread">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header cMsg">Customer Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header cMsg">Customer Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header cMsg">Customer Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header cMsg">Customer Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header cMsg">Customer Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header notif">Notification</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header oMsg">Order Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex unread">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header cMsg">Customer Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header cMsg">Customer Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header notif">Notification</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header oMsg">Order Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex unread">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header cMsg">Customer Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+                        <div class="msg-row msg-flex">
+                            <div class="msg-divider-sm">
+                                <span class="checkbox"></span>
+                            </div>
+                            <div class="msg-divider type">
+                                <span class="msg-header cMsg">Customer Message</span>
+                            </div>
+                            <div class="msg-divider sender">
+                                <span class="msg-header">Delyza Bagstuff</span>
+                            </div>
+                            <div class="msg-divider lMsg">
+                                <span class="msg-header">Sample text subject</span>
+                            </div>
+                            <div class="msg-divider updated">
+                                <span class="msg-header">2 days ago</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="msgDetail">
+                        <div class="msgTitle">
+                            Sample Text Subject
+                        </div>
+                        <div id="msgDetailHistory">
+                            <div class="history-group client">
+                                <div class="history-header">
+                                    <span class="no-img-msg"></span>
+                                    <span class="msg-username">Delyza Bagstuff</span>
+                                </div>
+                                <div class="chat-buble">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est deleniti, nostrum, natus ab impedit delectus architecto? Placeat, nulla, repellat mollitia unde aut quasi consequuntur incidunt modi tenetur veniam, maxime et!
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, doloremque mollitia explicabo ea veniam quisquam cumque, iste! Modi laudantium delectus molestias quia, autem cupiditate. Iste voluptates quisquam perferendis at, eligendi.
+                                    <span class="history-date">2 Days Ago</span>
+                                </div>
+
+                            </div>
+
+                            <div class="history-group admin">
+                                <div class="history-header">
+                                    <span class="no-img-msg"></span>
+                                    <span class="msg-username">Avani Admin</span>
+                                </div>
+                                <div class="chat-buble">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolore enim, corporis placeat iure facere saepe modi, pariatur quibusdam architecto nemo aut laudantium. Sequi numquam, consequatur mollitia debitis reprehenderit, ipsum!
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolore enim, corporis placeat iure facere saepe modi, pariatur quibusdam architecto nemo aut laudantium. Sequi numquam, consequatur mollitia debitis reprehenderit, ipsum!
+                                    <span class="history-date">2 Days Ago</span>
+                                </div>
+
+                            </div>
+                            <div class="history-group client">
+                                <div class="history-header">
+                                    <span class="no-img-msg"></span>
+                                    <span class="msg-username">Delyza Bagstuff</span>
+                                </div>
+                                <div class="chat-buble">
+                                    BAGSTUF
+                                    <span class="history-date">2 Days Ago</span>
+                                </div>
+
+                            </div>
+                            <div class="history-group admin">
+                                <div class="history-header">
+                                    <span class="no-img-msg"></span>
+                                    <span class="msg-username">Avani Admin</span>
+                                </div>
+                                <div class="chat-buble">
+                                    jangan cuman bales bagstuff
+                                    <span class="history-date">2 Days Ago</span>
+                                </div>
+
+                            </div>
+                            <div class="history-group client">
+                                <div class="history-header">
+                                    <span class="no-img-msg"></span>
+                                    <span class="msg-username">Delyza Bagstuff</span>
+                                </div>
+                                <div class="chat-buble">
+                                    BAGSTUF
+                                    <span class="history-date">2 Days Ago</span>
+                                </div>
+
+                            </div>
+                            <div class="history-group admin">
+                                <div class="history-header">
+                                    <span class="no-img-msg"></span>
+                                    <span class="msg-username">Avani Admin</span>
+                                </div>
+                                <div class="chat-buble">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolore enim, corporis placeat iure facere saepe modi, pariatur quibusdam architecto nemo aut laudantium. Sequi numquam, consequatur mollitia debitis reprehenderit, ipsum!
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolore enim, corporis placeat iure facere saepe modi, pariatur quibusdam architecto nemo aut laudantium. Sequi numquam, consequatur mollitia debitis reprehenderit, ipsum!
+                                    <span class="history-date">2 Days Ago</span>
+                                </div>
+
+                            </div>
+                            <div class="history-group client">
+                                <div class="history-header">
+                                    <span class="no-img-msg"></span>
+                                    <span class="msg-username">Delyza Bagstuff</span>
+                                </div>
+                                <div class="chat-buble">
+                                    BAGSTUF
+                                    <span class="history-date">2 Days Ago</span>
+                                </div>
+
+                            </div>
+                            <div class="history-group admin">
+                                <div class="history-header">
+                                    <span class="no-img-msg"></span>
+                                    <span class="msg-username">Avani Admin</span>
+                                </div>
+                                <div class="chat-buble">
+                                    jangan cuman bales bagstuff
+                                    <span class="history-date">2 Days Ago</span>
+                                </div>
+
+                            </div>
+                            <div class="history-group client">
+                                <div class="history-header">
+                                    <span class="no-img-msg"></span>
+                                    <span class="msg-username">Delyza Bagstuff</span>
+                                </div>
+                                <div class="chat-buble">
+                                    BAGSTUF
+                                    <span class="history-date">2 Days Ago</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="historyReply">
+                        <textarea name="name" class="full-input tall" placeholder="Reply"></textarea>
+                        <input type="submit" class="reply-btn" value=">">
+                    </div>
                 </div>
             </div>
         </section>
@@ -137,13 +507,15 @@
 </body>
     <!-- cloud js start -->
     <script type="text/javascript" src="http://js.static.sldclc.com/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="script/jquery.1.12.0.min.js"></script>
     <script type="text/javascript" src="http://js.static.sldclc.com/angular.1.6.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="http://js.static.sldclc.com/slick-1.6.0.min.js"></script>
     <!-- cloud js end   -->
 
     <!-- local js start -->
+    <script type="text/javascript" src="script/jquery.1.12.0.min.js"></script>
+    <script type="text/javascript" src="script/jquery.mCustomScrollbar.js"></script>
+
     <script type="text/javascript" src="script/jquery.js"></script>
     <script type="text/javascript" src="script/angular.js"></script>
     <!-- local js end   -->
