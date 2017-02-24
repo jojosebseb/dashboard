@@ -80,11 +80,23 @@ $(document).ready(function(){
         })
     //checkboxHandle
 
+    //scroll-handle
+    var wtf    = $('#msgDetailHistory');
+    var wtfHeight = wtf[0].scrollHeight;
+    wtf.scrollTop(wtfHeight);
+    //scroll-handle
+
     //msg-detailHandle
     $('#msgList').on('click', '.msg-divider', function(){
         $('#msgDetail').addClass('active');
         $('#historyReply').addClass('active');
         $('#msgList').addClass('hide');
+
+        $("#msgDetailHistory").mCustomScrollbar({
+            theme:"dark",
+            setTop: wtfHeight+'px',
+            scrollInertia: 200,
+        });
     })
     $('#msgDetail').on('click', '.msgTitle', function(){
         $('#msgDetail').removeClass('active');
@@ -104,25 +116,7 @@ $(document).ready(function(){
     })
     //msg-detailHandle
 
-    //scroll-handle
-    var wtf    = $('#msgDetailHistory');
-    var wtfHeight = wtf[0].scrollHeight;
-    wtf.scrollTop(wtfHeight);
-    //scroll-handle
-
-    // $('#msgDetailHistory').mCustomScrollBar();
-    // $(window).mCustomScrollbar({
-    //        theme:"dark",
-    //    });
-     $("#msgDetailHistory").mCustomScrollbar({
-            theme:"dark",
-            setTop: wtfHeight+'px',
-            scrollInertia: 200,
-        });
-
-
-
-
+    console.log($('.msg-row').length);
 
 
 })

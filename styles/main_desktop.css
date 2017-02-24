@@ -564,7 +564,7 @@
   position: relative;
   transition: all 0.3s cubic-bezier(0.75, -0.12, 0.21, 0.96);
   right: 0;
-  min-height: 665px;
+  height: 665px;
   background: white;
 }
 
@@ -576,13 +576,13 @@
 
 #message .msg-divider {
   display: inline-block;
-  padding: 7px 5px;
+  padding: 12px 5px;
   cursor: pointer;
 }
 
 #message .msg-divider-sm {
   display: inline-block;
-  padding: 7px 8px;
+  padding: 12px 8px;
 }
 
 #message #msgHeader {
@@ -599,7 +599,6 @@
 #message .msg-row {
   color: #626262;
   text-transform: capitalize;
-  padding: 5px 0;
   background: white;
   border-bottom: 1px solid #e4e4e4;
   border-right: 2px solid #eee;
@@ -612,16 +611,7 @@
   font-weight: bold;
   background: white;
   border-right: 2px solid white;
-}
-
-#message .msg-row.unread:after {
-  content: "";
-  height: 3px;
-  width: 3px;
-  right: 0;
-  top: 0;
-  background: #86b71e;
-  border-radius: 50%;
+  color: black;
 }
 
 #message .msg-row:hover {
@@ -706,9 +696,10 @@
 
 #msgDetail #msgDetailHistory {
   background: white;
-  padding: 10px 10px 10px 20px;
-  max-height: 614px;
+  padding: 10px 10px 5px 20px;
+  height: 614px;
   overflow: auto;
+  position: relative;
 }
 
 #msgDetail .chat-buble {
