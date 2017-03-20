@@ -13,6 +13,15 @@ $(document).ready(function(){
         var panelMod = $('.panel-module');
     })
 
+    exMod.each(function(i){
+        if ($(this).hasClass('active')) {
+            $('.wave-hover').css({
+                left: (i*166)+'px',
+                transition: 0
+            })
+        }
+    })
+
 
     $('#navbarExtended > .flex').on('mousemove', function(event){
         var Xm = event.pageX;
@@ -115,6 +124,8 @@ $(document).ready(function(){
         $('#msgList').removeClass('hide');
     })
     //msg-detailHandle
+
+
 
     console.log($('.msg-row').length);
 
