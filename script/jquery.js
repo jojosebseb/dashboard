@@ -7,6 +7,9 @@ $(document).ready(function(){
     var checkbox = $('.checkbox');
     var checkboxHandle = $('.checkbox-handle');
 
+    var exWidth = $('.extended-module').width();
+    console.log(exWidth);
+
     panelAddBtn.on('click', function(){
         $(this).parent().append('<div class="panel-module">Module '+moduleIndex+'</div>');
         moduleIndex++;
@@ -16,7 +19,7 @@ $(document).ready(function(){
     exMod.each(function(i){
         if ($(this).hasClass('active')) {
             $('.wave-hover').css({
-                left: (i*166)+'px',
+                left: (i*exWidth)+'px',
                 transition: 0
             })
         }
@@ -90,9 +93,9 @@ $(document).ready(function(){
     //checkboxHandle
 
     //scroll-handle
-    var wtf    = $('#msgDetailHistory');
-    var wtfHeight = wtf[0].scrollHeight;
-    wtf.scrollTop(wtfHeight);
+    // var wtf    = $('#msgDetailHistory');
+    // var wtfHeight = wtf[0].scrollHeight;
+    // wtf.scrollTop(wtfHeight);
     //scroll-handle
 
     //msg-detailHandle
