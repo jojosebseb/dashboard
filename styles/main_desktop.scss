@@ -268,22 +268,31 @@ $container-width: 1000px;
     padding: 20px 0;
     font-family: Calibri;
     color: #636363;
-    border-bottom: 1px solid #e6e6e6;
+    // border-right: 1px solid #e6e6e6;
+    position: absolute;
+    background: white;
+    left: 10px;
+    top: 121px;
     .page-header{
         padding: 5px 0;
         font-family: Monda;
     }
     .flex{
         display: flex;
+        width: 250px;
+        flex-wrap: wrap;
+        // padding: 0 10px;
         ul{
 
         }
         li{
             color: #7f7f7f;
-            padding: 5px 15px;
+            padding: 5px 10px;
             cursor: pointer;
-            margin: 0 0px 0 10px;;
+            // margin: 0 0px 0 10px;;
             line-height: 25px;
+            width: 100%;
+            margin: 1px 20px 0 0;
         }
         li:hover{
             background: $main-blue;
@@ -300,9 +309,17 @@ $container-width: 1000px;
 
 
 //parentContainer
+
+#parentContainer{
+    padding-left: 260px;
+    .container{
+        width: 100%;
+    }
+}
 .section-container{
     position: relative;
     overflow: hidden;
+
 }
 .checkbox{
     width: 14px;
