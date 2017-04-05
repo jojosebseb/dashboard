@@ -7,8 +7,14 @@ $(document).ready(function(){
     var checkbox = $('.checkbox');
     var checkboxHandle = $('.checkbox-handle');
 
-    var exWidth = $('.extended-module').width();
+    var exWidth = ($('.extended-module').width())+1;
+
+    // exWidth = 00;
     console.log(exWidth);
+
+    $('.wave-hover').css({
+        width: exWidth+'px'
+    })
 
     panelAddBtn.on('click', function(){
         $(this).parent().append('<div class="panel-module">Module '+moduleIndex+'</div>');
@@ -40,7 +46,7 @@ $(document).ready(function(){
         exMod.each(function(i){
             if ($(this).hasClass('active')) {
                 $('.wave-hover').css({
-                    left: (i*166)+'px',
+                    left: (i*exWidth)+'px',
                     transition: 'all .8s cubic-bezier(0.73, -0.18, 0.22, 1.04)'
                 })
             }
@@ -130,7 +136,7 @@ $(document).ready(function(){
 
 
 
-    console.log($('.msg-row').length);
+    // console.log($('.msg-row').length);
 
 
 })
