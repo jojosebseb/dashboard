@@ -9,13 +9,25 @@
   text-decoration: none;
 }
 
+a {
+  font-family: inherit !important;
+}
+
 @font-face {
   font-family: "Monda";
   src: url("../fonts/Monda-Regular.ttf");
 }
 
+.flex::after {
+  content: none;
+}
+
+.flex::before {
+  content: none;
+}
+
 .container {
-  width: 1000px;
+  width: 100%;
   margin: auto;
 }
 
@@ -293,6 +305,12 @@
 #menuNavigation .page-header {
   padding: 5px 0;
   font-family: Monda;
+  text-align: left;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 0;
+  width: 100%;
 }
 
 #menuNavigation .flex {
@@ -324,6 +342,7 @@
 
 #parentContainer {
   padding-left: 260px;
+  padding-right: 5%;
 }
 
 #parentContainer .container {

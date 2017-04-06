@@ -10,9 +10,19 @@
     text-decoration: none;
     // font-family: Calibri;
 }
+a{
+    font-family: inherit !important;
+}
 @font-face {
     font-family: "Monda";
     src: url('../fonts/Monda-Regular.ttf');
+}
+
+.flex::after{
+    content: none;
+}
+.flex::before{
+    content: none;
 }
 //init end
 
@@ -25,7 +35,7 @@ $navbar-height: 0;
 $navbar-extended: 0;
 
 
-$container-width: 1000px;
+$container-width: 100%;
 .container{
     width: $container-width;
     margin: auto;
@@ -276,6 +286,12 @@ $container-width: 1000px;
     .page-header{
         padding: 5px 0;
         font-family: Monda;
+        text-align: left;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 10px;
+        border-bottom: 0;
+        width: 100%;
     }
     .flex{
         display: flex;
@@ -312,6 +328,7 @@ $container-width: 1000px;
 
 #parentContainer{
     padding-left: 260px;
+    padding-right: 5%;
     .container{
         width: 100%;
     }
